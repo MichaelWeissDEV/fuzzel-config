@@ -15,6 +15,12 @@ Quellen und `packaging/arch/PKGBUILD` werden hier unabhängig gepflegt. Nach ein
 Push auf `main` und erfolgreichem Registry-Build erfolgt das Update mit
 `sudo pacman -Syu`. Entwicklung und Builds: [PACKAGING.md](PACKAGING.md).
 
+### Anpassung und Bedienung
+
+Schrift, Farben und Layout stehen in `~/.config/fuzzel/fuzzel.ini`. Fuzzel kann auch als Menü-Frontend mit `fuzzel --dmenu` verwendet werden. Die Optionen beschreibt `man fuzzel.ini`.
+
+Eigene Änderungen in der aktivierten Benutzerkopie bleiben bei der Synchronisierung erhalten; neue abweichende Vorgaben erscheinen als `.pacnew`. Siehe [Update und Wiederherstellung](https://arch-dotfiles.readthedocs.io/en/latest/verification/).
+
 [![Package safety](https://github.com/MichaelWeissDEV/fuzzel-config/actions/workflows/package.yml/badge.svg)](https://github.com/MichaelWeissDEV/fuzzel-config/actions/workflows/package.yml)
 
 [MIT-Lizenz](LICENSE).
